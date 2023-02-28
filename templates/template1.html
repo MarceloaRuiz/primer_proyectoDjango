@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Primer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en línea</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-    hola desde mi primer html
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Tienda en línea</h1>
+    <form action="#" method="get">
+      <input type="text" name="buscar" placeholder="Buscar productos...">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <section>
+      <h2>Productos</h2>
+      <ul class="productos">
+        <li>
+          <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>$100</p>
+            <button>Agregar al carrito</button>
+          </div>
+        </li>
+        <li>
+          <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>$150</p>
+            <button>Agregar al carrito</button>
+          </div>
+        </li>
+        <li>
+          <div class="producto">
+            <img src="producto3.jpg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>$200</p>
+            <button>Agregar al carrito</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <aside>
+      <h2>Carrito de compras</h2>
+      <ul>
+        <li>Producto 1 - $100</li>
+        <li>Producto 2 - $150</li>
+        <li>Producto 3 - $200</li>
+        <li>Total: $450</li>
+      </ul>
+      <a href="#">Ir a pagar</a>
+    </aside>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Política de privacidad</a></li>
+      <li><a href="#">Términos y condiciones</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <p>&copy; 2023 Tienda en línea. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
+
+
