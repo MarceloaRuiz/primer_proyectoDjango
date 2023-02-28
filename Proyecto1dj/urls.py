@@ -17,11 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from Proyecto1dj.views import saludo
 from Proyecto1dj.views import mostrar_html
+from Proyecto1dj.views import retornar_parametro, mi_nombre, show_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
-    path('html/', mostrar_html)
+    path('html/', mostrar_html),
+    path('fecha/', retornar_parametro),
+    path('nombre/<nombre>', mi_nombre),
+    path('show_html', show_html),
 
 ]
 
